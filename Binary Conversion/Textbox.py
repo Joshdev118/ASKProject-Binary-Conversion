@@ -35,7 +35,7 @@ class InputBox:
 
                 try:
                     self.int_value = str(self.text)
-                    print(f"Integer input: {self.int_value}")  # Do something with the integer
+                    print(f"Integer input: {self.int_value}") 
                 except ValueError:
                     print("Invalid input! Please enter an integer.")
 
@@ -46,12 +46,12 @@ class InputBox:
         return self.int_value
 
     def draw(self, surface):
-        # Draw text
+        # draw text
         surface.blit(self.txt_surface, (self.rect.x + 5, self.rect.y + 5))
-        # Draw the input box rectangle
+        # draw the input box rectangle
         pygame.draw.rect(surface, self.color, self.rect, 2)
 
     def update(self):
-        # Adjust the width of the input box based on the text
+        # adjust the width of the input box based on the text
         width = max(200, self.txt_surface.get_width() + 10)
         self.rect.w = width

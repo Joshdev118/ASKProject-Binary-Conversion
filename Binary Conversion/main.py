@@ -4,14 +4,14 @@ from Textbox import InputBox
 from Resultbox import OutputBox
 from Converter import Converter
 
-# Initialize pygame
+
 pygame.init()
 
-# Set screen dimensions
+
 screen = pygame.display.set_mode((900, 500))
 pygame.display.set_caption('Binary Conversion')
 
-# Define some colors
+
 WIN_C = (29, 29, 27)
 BLACK = (0, 0, 0)
 GRAY = (100, 100, 100)

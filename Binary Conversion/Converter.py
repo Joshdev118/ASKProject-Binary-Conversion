@@ -56,13 +56,13 @@ class Converter:
 
 
         try:
-            if type1 == 0:  # Input is decimal
+            if type1 == 0: 
                 decimal_value = int(input)
-            elif type1 == 1:  # Input is octal
+            elif type1 == 1: 
                 decimal_value = int(input, 8)
-            elif type1 == 2:  # Input is hexadecimal
+            elif type1 == 2: 
                 decimal_value = int(input, 16)
-            elif type1 == 3:  # Input is binary
+            elif type1 == 3:  
                 decimal_value = int(input, 2)
             else:
                 print("Invalid type1 provided.")
@@ -71,15 +71,15 @@ class Converter:
             print("Invalid input for the given type1.")
             return None
 
-        # Convert decimal to the desired output type
-        if type2 == 0:  # Convert to decimal
+
+        if type2 == 0: 
             return str(decimal_value)
-        elif type2 == 1:  # Convert to octal
-            return oct(decimal_value)[2:]  # Remove '0o' prefix
-        elif type2 == 2:  # Convert to hexadecimal
-            return hex(decimal_value)[2:].upper()  # Remove '0x' prefix and make uppercase
-        elif type2 == 3:  # Convert to binary
-            return bin(decimal_value)[2:]  # Remove '0b' prefix
+        elif type2 == 1: 
+            return oct(decimal_value)[2:] 
+        elif type2 == 2: 
+            return hex(decimal_value)[2:].upper()
+        elif type2 == 3:
+            return bin(decimal_value)[2:] 
         else:
             print("Invalid type2 provided.")
             return None

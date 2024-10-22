@@ -23,7 +23,7 @@ class OutputBox:
         # Re-render text
         self.txt_surface = self.font.render(self.text, True, self.text_color)
 
-        # Draw text
+
         surface.blit(self.txt_surface, (self.rect.x + 5, self.rect.y + 5))
-        # Draw the input box rectangle
+
         pygame.draw.rect(surface, self.color, self.rect, 2)
